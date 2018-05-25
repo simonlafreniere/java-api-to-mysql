@@ -1,7 +1,7 @@
 
 public class News {
-	 String title, description, url ;
-	 int publishedAt;
+	 private String title, description, url ;
+	 private int publishedAt;
 	 
 	 public News(String title,String description, String url, int publishedAt) {
 		 this.title=title;
