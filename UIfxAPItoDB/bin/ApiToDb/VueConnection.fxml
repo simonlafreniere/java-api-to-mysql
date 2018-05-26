@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="196.0" prefWidth="290.0" 
+	xmlns:fx="http://javafx.com/fxml/1" 
+	xmlns="http://javafx.com/javafx/8"
+	fx:controller="ApiToDb.ConnectionVueController">
+   <children>
+      <Button fx:id="btn_cancel" layoutX="224.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn_cancel_click" text="Cancel" />
+      <Button fx:id="btn_connect" layoutX="151.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn_connect_click" text="Connect" />
+      <Label layoutX="14.0" layoutY="14.0" text="URL: " />
+      <Label layoutX="14.0" layoutY="49.0" text="Username: " />
+      <Label layoutX="14.0" layoutY="90.0" text="Password: " />
+      <TextField fx:id="txt_url" layoutX="75.0" layoutY="10.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txt_username" layoutX="75.0" layoutY="45.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="txt_password" layoutX="75.0" layoutY="86.0" prefHeight="25.0" prefWidth="201.0" />
+   </children>
+</AnchorPane>

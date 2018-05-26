@@ -1,3 +1,5 @@
+package ApiToDb;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -5,17 +7,21 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class dbInterface {
-	Connection connection;
-	String url,	username, password;
+	private Connection connection;
+	private String url,	username, password;
+	private boolean connected;
 	
-	public dbInterface(String url, String username, String password) {
-		this.connection=null;
+	public dbInterface() {
+		connected=false;
+	}
+	
+	public void setConnectionString(String url, String username, String password) {
 		this.url=url;
 		this.username=username;
 		this.password=password;
 	}
 	
-	public void connect() { 
+	public void connect() throws IllegalStateException{ 
 	try {
 		connection = DriverManager.getConnection(url, username, password);
 	    System.out.println("Database connected!");
@@ -31,6 +37,13 @@ public class dbInterface {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public void setConnected(boolean state) {
+		connected=state;
+	}
+	public boolean isConnected() {
+		return connected;
 	}
 	
 	public void insert(News news) throws SQLException {

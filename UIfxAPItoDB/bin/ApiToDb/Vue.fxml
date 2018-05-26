@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="406.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApiToDb.MainVueController">
+   <children>
+      <Button fx:id="btn_connect" layoutX="28.0" layoutY="19.0" mnemonicParsing="false" onAction="#btn_connect_click" text="Connect to db" />
+      <Button fx:id="btn_loadAPI" layoutX="144.0" layoutY="19.0" mnemonicParsing="false" onAction="#btn_loadAPI_click" text="Load JSON from API" />
+      <Button fx:id="btn_insert" layoutX="399.0" layoutY="19.0" mnemonicParsing="false" onAction="#btn_insert_click" text="Insert DATA in db" />
+      <Button fx:id="btn_show" layoutX="293.0" layoutY="19.0" mnemonicParsing="false" onAction="#btn_show_click" text="Show DATA" />
+      <TextArea fx:id="txt_show" layoutX="28.0" layoutY="51.0" prefHeight="343.0" prefWidth="483.0" />
+   </children>
+</AnchorPane>

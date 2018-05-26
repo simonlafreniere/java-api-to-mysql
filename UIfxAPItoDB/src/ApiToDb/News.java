@@ -1,3 +1,4 @@
+package ApiToDb;
 
 public class News {
 	 private String title, description, url ;
@@ -44,6 +45,6 @@ public class News {
 	 
 	 @Override
 	 public String toString() {
-	     return "Product [title=" + title+ ", description= " + description+",url= "+url+", publishedAt= "+publishedAt+"]";
+	     return "title=" + title+ ", description= " + description+",url= "+url+", publishedAt= "+publishedAt;
 	 }
 }
